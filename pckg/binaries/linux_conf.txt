@@ -1,0 +1,81 @@
+/etc/inittab startx
+/etc/fstab montagem driver
+/etc/bashrc,global	
+bash.bashrc
+etc/tomcat
+/usr/share/tomcat
+
+
+typeset show function -f -u -l
+
+
+
+xx(){
+echo $1
+}....end                   echo oi | awk '{print length}'
+
+
+$1,$2...parameter
+$* all parameters
+
+
+$(`date`), if[ "`date`"=="20185" ]
+
+
+
+sudo apt-get install software-properties-common
+
+
+sudo add-apt-repository -y ppa:webupd8team/java
+
+
+
+sudo apt-get update
+
+
+$ sudo apt-get -y install oracle-java8-installer
+
+
+
+ssh-agent $SHELL
+ssh-add
+ssh-add -l
+
+see version linux
+cat /etc/issue
+cat /etc/issue | cut -d' ' -f1,2`
+cat /proc/version
+
+
+
+
+girthub sigin gpg
+ssh-keygen | gpg --gen-key
+
+export GPG_TTY=tty
+
+
+
+gpg --list-key -keyid-format long
+gpg -a --export id
+git config --global user.signingkey id
+
+
+
+
+
+
+date +%d:%d:%Y
+ln -s /usr/share/zoneinfo/America/Bahia /etc/localtime
+/etc/timezone
+dpkg-reconfigure tzdata
+tzselect
+
+TZ='America/Bahia';export TZ
+TZ=:GMT+3;export TZ
+{+3,bahia...,+2 rj,sp}
+date +"%r %x"
+
+
+apt-get -f install
+

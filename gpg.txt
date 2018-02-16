@@ -1,0 +1,3 @@
+associa nome com email da assinatura
+gpg
+gpg
