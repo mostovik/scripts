@@ -4,7 +4,11 @@ namespace alu{
 class aluno{
 public static void Main(String[] args){
 aula al=new aula();
+
+//foreach(int i as args)
 al.setNome(args[0]);
+//Console.WriteLine(args.Ccount());
+
 Console.WriteLine("bem-vindo "+al.getNome());
 professor pr=new professor();
 pr.setNome("andre");
