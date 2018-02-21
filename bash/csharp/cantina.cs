@@ -19,6 +19,7 @@ pr.Code="0110";
 Console.WriteLine("codigo da compra:"+pr.Code);
 Console.WriteLine("total compra:"+String.Format("{0:0.00}",pr.Preco));
 Console.WriteLine("codigo da compra:%f",pr.Preco);
+  ssss
 }
 }}}
 
