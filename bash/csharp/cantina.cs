@@ -14,22 +14,28 @@ String resp=Console.ReadLine();
 if(resp=="5"){
 produto pr = new produto();
 //Console.WriteLine("okj");
-pr.preco=2F;
-//Console.WriteLine("total compra:"+pr.preco);
+pr.Preco=22F;
+pr.Code="0110";
+Console.WriteLine("codigo da compra:"+pr.Code);
+Console.WriteLine("total compra:"+String.Format("{0:0.00}",pr.Preco));
+Console.WriteLine("codigo da compra:%f",pr.Preco);
 }
 }}}
 
 
 class produto{
-String desc{
+String desc,code;
+float preco;
+
+String Desc{
 set{desc=value;}
 get{return desc;}
 }
-String code{
+public String Code{
 set{code=value;}
 get{return code;}
 }
-public float preco{
+public float Preco{
 set{
 preco=value;
 }
