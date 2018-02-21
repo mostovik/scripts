@@ -27,6 +27,10 @@ return this.nome;
 
 class professor{
 String nome;
+
+
+
+
 public void setNome(String nome){
 this.nome=nome;
 }

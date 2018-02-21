@@ -2,7 +2,9 @@ using System;
 namespace cant{
 class cantina{
 public static void Main(String[] n){
-Console.WriteLine("bem vindo a AmartRango\nescolha o seu cardápio");
+bool zap=true;
+  do{
+  Console.WriteLine("bem vindo a AmartRango\nescolha o seu cardápio");
 Console.WriteLine(" ########################################");
 Console.WriteLine("#1-pastel 2.20\t\t\t#");
 Console.WriteLine("#2-hamburguer 3.00\t\t\t#");
@@ -12,15 +14,19 @@ Console.WriteLine("#5-Finalizar\t\t\t#");
 Console.WriteLine(" ########################################");
 String resp=Console.ReadLine();
 if(resp=="5"){
-produto pr = new produto();
+zap=false; 
+  produto pr = new produto();
 //Console.WriteLine("okj");
 pr.Preco=22F;
 pr.Code="0110";
 Console.WriteLine("codigo da compra:"+pr.Code);
 Console.WriteLine("total compra:"+String.Format("{0:0.00}",pr.Preco));
+Console.WriteLine("compra com juros:"+String.Format("{0:0.00}",pr.calcular ));
 Console.WriteLine("codigo da compra:%f",pr.Preco);
-
+  }
 }
+  while(zap);
+  
 }}}
 
 
@@ -45,4 +51,11 @@ return preco;
 }
 }
 
+ public float calcular{
+   set{preco=value;}
+   get{return preco*10;}
+ } 
+  
+  
+  
 }
