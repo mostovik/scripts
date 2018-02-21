@@ -11,9 +11,11 @@ al.setNome(args[0]);
 
 Console.WriteLine("bem-vindo "+al.getNome());
 professor pr=new professor();
-pr.setNome("andre");
-Console.WriteLine("eu sou aluno de "+pr.getNome());
 
+pr.Nome=Console.ReadLine();
+//pr.setNome("andre");
+//Console.WriteLine("eu sou aluno de "+pr.getNome());
+Console.WriteLine("sou aluno de "+pr.Nome);
 }}}
 
 
@@ -33,8 +35,19 @@ return this.nome;
 }
 
 class professor{
-String nome;
 
+public String nome;
+
+public String Nome{
+set{
+nome=value;
+}
+get{
+return nome;
+}
+}
+
+/*
 public String getNome(){
 return this.nome;
 }
@@ -42,4 +55,8 @@ return this.nome;
 public void setNome(String arg){
 this.nome=arg;
 }
+*/
 }
+
+
+
