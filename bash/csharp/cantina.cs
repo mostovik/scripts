@@ -17,8 +17,8 @@ if(resp=="5"){
 zap=false; 
   produto pr = new produto();
 //Console.WriteLine("okj");
-pr.Preco=22F;
-pr.Code="0110";
+pr.Preco=10;
+pr.Code="0110011110101";
 Console.WriteLine("codigo da compra:"+pr.Code);
 Console.WriteLine("total compra:"+String.Format("{0:0.00}",pr.Preco));
 Console.WriteLine("compra com juros:"+String.Format("{0:0.00}",pr.calcular ));
@@ -27,7 +27,21 @@ Console.WriteLine("codigo da compra:%f",pr.Preco);
 }
   while(zap);
   
+  //fim class main
 }}}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 class produto{
@@ -52,8 +66,11 @@ return preco;
 }
 
  public float calcular{
-   set{preco=value;}
-   get{return preco*10;}
+   //set{preco=value;}
+   get{
+     if(preco>10)
+       Console.WriteLine("maior que dez");
+     return preco*10;}
  } 
   
   
