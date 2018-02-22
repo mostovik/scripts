@@ -4,8 +4,10 @@ class cantina{
 public static void Main(String[] n){
 bool zap=true;
 String resp;
+String nm="alxsy";
  produto pr = new produto();
  Console.Clear();
+  chamar();
   do{
 Console.WriteLine("bem vindo a AmartRango\nescolha o seu cardápio");
 Console.WriteLine(" ########################################");
@@ -53,8 +55,26 @@ resp=Console.ReadLine();
 Console.WriteLine("preco da compra:"+String.Format("{0:0.00}",pr.Preco));
 //Console.WriteLine("total compra:"+String.Format("{0:0.00}",pr.Preco));
 Console.WriteLine("compra com juros:"+String.Format("{0:0.00}",pr.calcular ));
-  //fim class main
-}}}
+  
+ }
+  
+static void chamar(){
+   Console.WriteLine("ok");
+   
+ }
+  /*
+  public String chamando{
+   get{pr.preco;}
+   
+ }
+  */
+  
+  
+  
+  //fim main
+  }
+
+}
 
 
 
