@@ -52,6 +52,8 @@ resp=Console.ReadLine();
   while(zap);
   //produto pr = new produto();
  //pr.Code="0110011110101";
+  pr.nom="alan";
+  
 Console.WriteLine("preco da compra:"+String.Format("{0:0.00}",pr.Preco));
 //Console.WriteLine("total compra:"+String.Format("{0:0.00}",pr.Preco));
 Console.WriteLine("compra com juros:"+String.Format("{0:0.00}",pr.calcular ));
@@ -91,7 +93,8 @@ static void chamar(){
 
 
 class produto{
-public String desc,code;
+public String nom;
+  public String desc,code;
 public float preco;
 
 String Desc{
@@ -112,13 +115,13 @@ return preco;
 }
 
  public float calcular{
-   //set{preco=value;}
+   set{nom=value.ToString();}
    get{
-     if(preco>10)
-       Console.WriteLine("maior que dez");
-     return preco*10;}
+     if(nom=="alan")
+     return float.Parse(preco*10);
+     
+     
  } 
+ }}
   
-  
-  
-}
+
