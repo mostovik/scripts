@@ -1,4 +1,4 @@
-class escola{
+class estacio{
 public static void main(String[] args){
 aluno al=new aluno();
 al.setNome("alex");
