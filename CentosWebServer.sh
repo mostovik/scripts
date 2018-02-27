@@ -1,9 +1,10 @@
 #service name start
 #which name
-#scripy alxsy mostovik...(github)
+#script alxsy mostovik...(github)
 
-yum install update
-yum install upgrade
+yum install update -y
+yum install upgrade -y
+yum install nano -y
 #instalaro apche
 yum install httpd -y
 
@@ -59,7 +60,7 @@ phpinfo();
 " > info.php
 
 #mudar local padrão do apache /var/www/html
-sed s/"DocumentRoot \"\/var\/www\/html\/\""/"DocumentRoot \"\/home\/cabox\/workspace\/\""/g -i /etc/httpd/conf/httpd.conf
+sed s/"DocumentRoot \"\/var\/www\/html\""/"DocumentRoot \"\/home\/cabox\/workspace\""/g -i /etc/httpd/conf/httpd.conf
 
 
 
