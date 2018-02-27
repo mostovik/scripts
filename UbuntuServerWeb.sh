@@ -25,7 +25,7 @@ apt-get install php5-mysql phpmyadmin libapache2-mod-auth-mysql -y
 #ln -s /var/www/ .
 
 #mudando o padrão apache2
-sed s/"DocumentRoot \/var\/www\/"/"DocumentRoot \/home\/cabox\/workspace/"/g -i /etc/apache2/sites-enabled/000-default.conf
+sed s/"DocumentRoot \/var\/www\/html\/"/"DocumentRoot \/home\/cabox\/workspace/"/g -i /etc/apache2/sites-enabled/000-default.conf
 
 echo "<?php
 phpinfo();

@@ -59,7 +59,7 @@ phpinfo();
 " > info.php
 
 #mudar local padrão do apache /var/www/html
-sed s/"DocumentRoot \"\/var\/www\/html\""/"DocumentRoot \"\/home\/cabox\/workspace\""/g -i /etc/httpd/conf/httpd.conf
+sed s/"DocumentRoot \"\/var\/www\/html\/\""/"DocumentRoot \"\/home\/cabox\/workspace\/\""/g -i /etc/httpd/conf/httpd.conf
 
 
 
