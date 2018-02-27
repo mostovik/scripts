@@ -6,16 +6,16 @@ apt-get upgrade -y
 
 apt-get install nano -y
 #install apache2
-apt-get -y install apache2
+apt-get install apache2 -y
 
 #install php
-apt-get install -y php5 libapache2-mod-php5
+apt-get install php5 libapache2-mod-php5 -y 
 
 #resiniciar apache2
 service apache2 restart
 
 #instalar mysql
-apt-get install -y mysql-server
+apt-get install mysql-server -y 
 
 #instalar phpmyadmin
 apt-get install php5-mysql phpmyadmin libapache2-mod-auth-mysql -y
