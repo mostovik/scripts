@@ -1,3 +1,4 @@
+#escrito por alexy mostovik
 #atualizar packote
 apt-get update -y
 
