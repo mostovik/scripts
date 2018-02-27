@@ -2,6 +2,8 @@
 #which name
 #scripy alxsy mostovik...(github)
 
+yum install update
+yum install upgrade
 #instalaro apche
 yum install httpd -y
 

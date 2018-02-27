@@ -19,10 +19,18 @@ apt-get install -y mysql-server
 apt-get install php5-mysql phpmyadmin libapache2-mod-auth-mysql -y
 
 #link phpmyadmin apache2
-ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
+#ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
 
-chmod 777 -R /var/www/
-ln -s /var/www/ .
+#chmod 777 -R /var/www/
+#ln -s /var/www/ .
+
+#mudando o padrão apache2
+sed s/"DocumentRoot \/var\/www\/"/"DocumentRoot \/home\/cabox\/workspace/"/g -i /etc/apache2/sites-enabled/000-default.conf
+
+echo "<?php
+phpinfo();
+?>
+" > info.php
 
 #instalando lamp
 #apt-get install lamp^ phpmyadmin -y
