@@ -40,21 +40,24 @@ yum install php php-mysql –y
 #instalar bibnlioteca php
 yum -y install php-mcrypt.x86_64
 yum -y install php-mbstring.x86_64
-yum -y install fpm.x86_64
+#yum -y install fpm.x86_64
 
 
 # rodar automaticamente server (php  automaticatico  Apache iniciar):
 #sudo chkconfig httpd on
 #sudo chkconfig mysqld on
 
-chmod 777 -R /var/www/
-ln -s /var/www /home/cabox/workspace
-sudo nano /var/www/html/info.php
+#chmod 777 -R /var/www/
+#ln -s /var/www /home/cabox/workspace
+#sudo nano /var/www/html/info.php
 
 echo "<?php
 phpinfo();
 ?>
 " > info.php
+
+#mudar local padrão do apache /var/www/html
+sed s/"DocumentRoot \"\/var\/www\/html\""/"DocumentRoot \"\/home\/cabox\/workspace\""/g -i /etc/httpd/conf/httpd.conf
 
 
 
