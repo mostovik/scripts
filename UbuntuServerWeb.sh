@@ -43,3 +43,6 @@ phpinfo();
 #apt-get update -y
 #apt-get install xampp -y
 #sudo /opt/lampp/lampp start
+
+
+service apache2 restart
