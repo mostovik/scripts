@@ -3,6 +3,7 @@ apt-get update -y
 
 apt-get upgrade -y
 
+apt-get install nano -y
 #install apache2
 apt-get -y install apache2
 
@@ -25,8 +26,8 @@ apt-get install php5-mysql phpmyadmin libapache2-mod-auth-mysql -y
 #ln -s /var/www/ .
 
 #mudando o padrão apache2
-sed s/"DocumentRoot \/var\/www\/html\/"/"DocumentRoot \/home\/cabox\/workspace/"/g -i /etc/apache2/sites-enabled/000-default.conf
-
+sed s/"DocumentRoot \/var\/www\/html"/"DocumentRoot \/home\/cabox\/workspace"/g -i /etc/apache2/sites-enabled/000-default.conf
+sed s/"Directory \/var\/www\/"/"Directory \/home\/cabox\/workspace"/g -i /etc/apache2/apache2.conf
 echo "<?php
 phpinfo();
 ?>
